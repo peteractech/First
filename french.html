@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter | French Tutor</title>
+
+  <!-- Tailwind CSS (no setup needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add smooth scroll + animation -->
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { animation: fadeIn 1s ease-in forwards; opacity: 0; }
+    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header / Hero -->
+  <header class="bg-red-900 text-black py-20 text-center fade-in">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">🇫🇷 Bonjour! I'm Peter</h1>
+    <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto">
+      Passionate online French tutor helping learners speak confidently with authentic pronunciation and real-life expressions.
+    </p>
+    <a href="#contact" class="bg-black-50 text-red-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Book a Lesson</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto text-center py-16 px-6 fade-in">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-lg leading-relaxed text-gray-600">
+      Salut! I’m Peter — a certified French tutor with over 13 years of experience teaching students online and in person.
+      I specialize in conversational French, exam prep (DELF), and confidence-building for beginners.
+      My approach blends culture, humor, and real-world communication — so you don’t just learn grammar, you live the language!
+    </p>
+  </section>
+
+  <!-- Lessons Section -->
+  <section id="lessons" class="bg-white py-16 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-10">Popular Lessons</h2>
+
+    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-black-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">✨ Beginner French</h3>
+        <p class="text-gray-600 mb-4">Start from zero! Learn greetings, simple sentences, and pronunciation.</p>
+        <span class="inline-block bg-black-900 text-white px-4 py-2 rounded-full text-sm">Enroll Now</span>
+      </div>
+
+      <div class="bg-black-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">🗣️ Conversation Practice</h3>
+        <p class="text-gray-600 mb-4">Improve your fluency and confidence through fun, real-world dialogues.</p>
+        <span class="inline-block bg-black-900 text-white px-4 py-2 rounded-full text-sm">Join Session</span>
+      </div>
+
+      <div class="bg-black-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">🎓 DELF Exam Prep</h3>
+        <p class="text-gray-600 mb-4">Targeted practice and feedback for B1–C1 certification exams.</p>
+        <span class="inline-block bg-black-900 text-white px-4 py-2 rounded-full text-sm">Get Started</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Lessons -->
+  <section id="videos" class="bg-gray-100 py-16 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-8">🎥 Watch My YouTube Lessons</h2>
+    <p class="text-center text-gray-600 mb-10">Here are some of my most popular French teaching videos:</p>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <!-- Replace video URLs below with your own -->
+      <iframe class="w-full h-64 rounded-xl shadow-lg" src="https://www.youtube.com/embed/os3bDuC41z0?si=oVGuFRvrbCGz76jx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="w-full h-64 rounded-xl shadow-lg" src="https://www.youtube.com/embed/Z5M3hptCy0s?si=iwG2PprGGwm9cjDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="w-full h-64 rounded-xl shadow-lg" src="https://www.youtube.com/embed/yrorcXMYR54?si=xfYicYUtirtsp2qW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="reviews" class="py-16 px-6 bg-white fade-in">
+    <h2 class="text-3xl font-bold text-center mb-8">💬 What My Students Say</h2>
+    <div class="max-w-4xl mx-auto grid gap-8 md:grid-cols-2">
+      <div class="p-6 border rounded-2xl shadow-sm">
+        <p class="text-gray-700 italic">“Peter makes learning French fun and easy! I went from nervous to fluent in 6 months.”</p>
+        <p class="mt-3 font-semibold text-blue-900">— Sara, UK 🇬🇧</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow-sm">
+        <p class="text-gray-700 italic">“His conversation classes helped me sound natural before moving to Paris. Merci beaucoup!”</p>
+        <p class="mt-3 font-semibold text-blue-900">— Nila, India 🇮🇳</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-900 text-white py-20 text-center fade-in">
+    <h2 class="text-3xl font-bold mb-4">Let’s Start Your French Journey!</h2>
+    <p class="text-lg mb-6">📧 Email me at 
+      <a href="mailto:peterachris@gmail.com" class="underline hover:text-gray-200">peterachris@gmail.com</a>
+    </p>
+    <a href="mailto:peterachris@gmail.com" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Book a Free Trial</a>
+
+    <div class="flex justify-center gap-4 mt-8">
+      <a href="https://youtube.com/@peterachris?si=lIkey0aBui-XH2z9" target="_blank" class="hover:opacity-80">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-8 h-8">
+      </a>
+      <a href="https://www.instagram.com/yourhandle" target="_blank" class="hover:opacity-80">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="w-8 h-8">
+      </a>
+      <a href="https://wa.me/yourwhatsapplink" target="_blank" class="hover:opacity-80">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384055.png" alt="WhatsApp" class="w-8 h-8">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 py-6 text-sm">
+    <p>© 2025 Peter’s French Tutoring — Made with ❤️ from Paris</p>
+  </footer>
+
+</body>
+</html>
