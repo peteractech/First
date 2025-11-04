@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment - Darshan Medical Center</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #f8fafc; }
+  </style>
+</head>
+
+<body class="font-sans text-gray-700">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-700 to-cyan-600 text-white text-center py-16 px-6">
+    <h1 class="text-4xl font-bold mb-3">Book an Appointment</h1>
+    <p class="text-lg opacity-90">Darshan Medical Center & Savery Labs, Puducherry</p>
+  </header>
+
+  <!-- Form -->
+  <section class="py-12 px-6 max-w-xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center text-teal-700 mb-8">Patient Information</h2>
+
+    <form onsubmit="showMessage(event)" class="bg-white shadow-md rounded-2xl p-8 space-y-4">
+      <input type="text" placeholder="Full Name" required class="border p-3 rounded w-full">
+      <input type="tel" placeholder="Phone Number" required class="border p-3 rounded w-full">
+      <input type="email" placeholder="Email (optional)" class="border p-3 rounded w-full">
+      <input type="date" required class="border p-3 rounded w-full">
+      <select required class="border p-3 rounded w-full">
+        <option value="">Select Department</option>
+        <option>General Consultation</option>
+        <option>Lab Testing</option>
+        <option>Health Checkup</option>
+      </select>
+      <textarea placeholder="Describe your concern (optional)" class="border p-3 rounded w-full"></textarea>
+
+      <button class="bg-teal-600 text-white font-semibold px-6 py-3 rounded hover:bg-teal-700 transition w-full">
+        Submit Appointment
+      </button>
+    </form>
+
+    <div class="text-center mt-8">
+      <a href="index.html" class="text-teal-700 underline hover:text-cyan-600">← Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Success Message Script -->
+  <script>
+    function showMessage(event) {
+      event.preventDefault();
+      alert("✅ Thank you! Your appointment request has been received.");
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 text-gray-500 text-sm border-t mt-10">
+    <p>© 2025 Darshan Medical Center & Savery Labs — All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
